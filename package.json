@@ -5,9 +5,9 @@
     "node": ">=4.1.0"
   },
   "description": "Just a test website on Azure.",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --harmony --recursive test"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,14 @@
   "bugs": {
     "url": "https://github.com/TCooper8/azure-site-test/issues"
   },
-  "homepage": "https://github.com/TCooper8/azure-site-test#readme"
+  "homepage": "https://github.com/TCooper8/azure-site-test#readme",
+  "devDependencies": {
+    "mocha": "^2.3.3"
+  },
+  "dependencies": {
+    "azure": "^0.10.6",
+    "bluebird": "^2.10.2",
+    "bunyan": "^1.5.1",
+    "restify": "^4.0.3"
+  }
 }

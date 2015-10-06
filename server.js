@@ -1,8 +1,6 @@
-'use strict'
-
-let Http = require('http')
-let port = process.env.PORT || 80
-let host = process.env.HOST || '0.0.0.0'
+var Http = require('http')
+var port = process.env.PORT || 3000
+var host = process.env.HOST || '0.0.0.0'
 
 Http.createServer( (req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' })

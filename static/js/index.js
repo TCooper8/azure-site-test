@@ -7,8 +7,8 @@
     var loginButton = $("#loginButton");
     var logoutButton = $("#logoutButton");
 
-    var urlIn = location.origin + "/api/v1/bb/web/login";
-    var urlOut = location.origin + "/api/v1/bb/web/logout";
+    var urlIn = location.origin + "/login";
+    var urlOut = location.origin + "/logout";
 
     function toast (msg, duration) {
         Materialize.toast(msg, duration);
